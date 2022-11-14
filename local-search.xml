@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>calculus</title>
+    <link href="/2022/11/14/calculus/"/>
+    <url>/2022/11/14/calculus/</url>
+    
+    <content type="html"><![CDATA[<h1 id="微積分上課筆記"><a href="#微積分上課筆記" class="headerlink" title="微積分上課筆記"></a>微積分上課筆記</h1><p><em><strong>Euler method</strong></em> 開方</p><h2 id="Volumes-by-Cylinderical-Shells"><a href="#Volumes-by-Cylinderical-Shells" class="headerlink" title="Volumes by Cylinderical Shells"></a>Volumes by Cylinderical Shells</h2><blockquote><p>[time&#x3D;2022,11,14]</p></blockquote><h3 id="Disk-method"><a href="#Disk-method" class="headerlink" title="Disk method"></a>Disk method</h3><p>$\int _a ^b \pi f^2(x)dx$</p><p><em><strong>check</strong></em></p><blockquote><p>算球體體積<br>Calc the [體積] of a ball</p></blockquote><blockquote><p>這是半球體積</p></blockquote><p>$r &#x3D; x$<br>$h&#x3D;\sqrt{1^2 - x^2}$<br>$Volume &#x3D; \int_0^1 2\pi x\sqrt{1^2 - x^2}dx$<br>$let$ $u &#x3D; 1 - x^2$<br>$V &#x3D; \pi\int_0^1\sqrt u$ $du$<br>$&#x3D; \pi \frac{3}{2}(u) ^{\frac{3}{2}}|_{u &#x3D; 0}^{1}$<br>$&#x3D; \frac{\frac{4}{3}\pi 1^3}{2} &#x3D; \frac{2}{3}$</p><h3 id="Shell-method"><a href="#Shell-method" class="headerlink" title="Shell method"></a>Shell method</h3><p>$\int^{d}_{c}2\pi y f(y)dy$</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>math</tag>
+      
+      <tag>calculus</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>algosolution</title>
     <link href="/2022/11/13/algosolution/"/>
     <url>/2022/11/13/algosolution/</url>
