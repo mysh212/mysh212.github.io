@@ -4,7 +4,7 @@
     border: 1px solid #E5E5E5;
     position: relative;
     clear: both;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 .spoiler .spoiler-title {
@@ -16,6 +16,7 @@
     font-size: 13px;
     display: block;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .spoiler .spoiler-title:before {
@@ -23,11 +24,11 @@
 }
 
 .spoiler.collapsed .spoiler-title:before {
-    content: "Show ";
+    content: "";
 }
 
 .spoiler.expanded .spoiler-title:before {
-    content: "Hide ";
+    content: "";
 }
 
 .spoiler .spoiler-content {
