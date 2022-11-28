@@ -4,11 +4,40 @@
   
   
   <entry>
+    <title>微積分上課筆記4</title>
+    <link href="/2022/11/28/%E5%BE%AE%E7%A9%8D%E5%88%86%E4%B8%8A%E8%AA%B2%E7%AD%86%E8%A8%984/"/>
+    <url>/2022/11/28/%E5%BE%AE%E7%A9%8D%E5%88%86%E4%B8%8A%E8%AA%B2%E7%AD%86%E8%A8%984/</url>
+    
+    <content type="html"><![CDATA[<h2 id="三角函數"><a href="#三角函數" class="headerlink" title="三角函數"></a>三角函數</h2><p>$sin(sin^{-1}x)&#x3D;x$<br>$\displaystyle \frac{d}{dx}sin(sin^{-1}x)&#x3D;\frac{dx}{dx} &#x3D; 1$<br>$\displaystyle &#x3D;cos(sin^{-1}x) \frac{d}{dx}sin^{-1}x$<br>$\displaystyle (sin^{-1}x)’ &#x3D; \frac{1}{cos(sin^{-1}x))}$<br>$\displaystyle &#x3D;\frac{1}{\sqrt{cos^2(sin^{-1} x)}}$<br>$\displaystyle &#x3D; \frac{1}{\sqrt{1 - sin^2(sin^{-1} x)}}$<br>$\displaystyle &#x3D;\frac{1}{\sqrt{1 - x^2}}$</p><blockquote><p>$cos$ 同理</p></blockquote><p>$tan(tan^{-1}x)&#x3D;x$<br>$\displaystyle \frac{d}{dx}tan(tan^{-1}x)&#x3D;\frac{dx}{dx} &#x3D; 1$<br>$\displaystyle &#x3D;sec(tan^{-1}x) \frac{d}{dx}tan^{-1}x$<br>$\displaystyle &#x3D;\frac{1}{1 + tan^2(tan^{-1} x)} &#x3D; \frac{1}{1 + x^2}$</p><p><img src="/ps/IMG_20221128_154842.jpg"></p><h3 id="例題"><a href="#例題" class="headerlink" title="例題"></a>例題</h3><blockquote><p>Prove that $\displaystyle tan^{-1}x + cot^{-1} x &#x3D; \frac{\pi}{2}$</p></blockquote><div class='spoiler collapsed'>    <div class='spoiler-title'>        solution    </div>    <div class='spoiler-content'>        <p>$\displaystyle (tan^{-1}x)’ + (cot^{-1})’ x &#x3D; (\frac{\pi}{2})’ &#x3D; 0$</p>    </div></div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <categories>
+      
+      <category>數學</category>
+      
+      <category>上課筆記</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>math</tag>
+      
+      <tag>calculus</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>微積分上課筆記3</title>
     <link href="/2022/11/21/%E5%BE%AE%E7%A9%8D%E5%88%86%E4%B8%8A%E8%AA%B2%E7%AD%86%E8%A8%983/"/>
     <url>/2022/11/21/%E5%BE%AE%E7%A9%8D%E5%88%86%E4%B8%8A%E8%AA%B2%E7%AD%86%E8%A8%983/</url>
     
-    <content type="html"><![CDATA[<h1 id="微積分上課筆記"><a href="#微積分上課筆記" class="headerlink" title="微積分上課筆記"></a>微積分上課筆記</h1><h2 id="微分"><a href="#微分" class="headerlink" title="微分"></a>微分</h2><p><em><strong><font color='gray'>P.441</font></strong></em></p><blockquote><p>$\displaystyle (\ln x)’ &#x3D; \frac{x’}{x}$ $\text{or}$ $\displaystyle [\ln(g(x))]’ &#x3D; \frac{g’(x)}{g(x)}$</p></blockquote><blockquote><p>求$\displaystyle y&#x3D;\frac{x^{\frac{3}{4}} \sqrt{x^2+1}}{(3x+2)^5}$之微分</p></blockquote><p>$\displaystyle \frac{dy}{dx} \frac{1}{y}&#x3D; \frac{3}{4} \frac{1}{x}+\frac{1}{2} \frac{2x}{x^2+1}-5\frac{3}{3x+2}$</p><blockquote><p>$\ln e^x &#x3D; x\ln e &#x3D; x$<br>$(x\ln e)’ &#x3D; (x)’ &#x3D; 1$<br>$\displaystyle\frac{1}{e ^ 2} \frac{d}{dx}e^x&#x3D;1$<br>$\displaystyle\rightarrow \frac{d}{dx}e^x&#x3D;e^x$<br>唯一一個微分後不變的ㄈ</p></blockquote><h3 id="與-log-之關係"><a href="#與-log-之關係" class="headerlink" title="與$log$之關係"></a>與$log$之關係</h3><p>$\displaystyle \log_b^a&#x3D;\frac{\ln a}{\ln b}$<br><em><strong>if b is a constant</strong></em><br>$\displaystyle </p><h2 id="積分"><a href="#積分" class="headerlink" title="積分"></a>積分</h2><blockquote><p>求$\displaystyle \int_1^e \frac{\ln x}{x}dx$</p></blockquote><p>$\displaystyle &#x3D;\int_1^e (\ln x) \cdot d(\ln x)$<br>$\text{(due to}$ $(\ln x)’ &#x3D; \frac{1}{x} \text{)}$<br>$\displaystyle &#x3D;\frac{1}{2}(\ln x) ^ 2|_1^e$</p><h2 id="反函數"><a href="#反函數" class="headerlink" title="反函數"></a>反函數</h2><blockquote><p>$y &#x3D; \ln x \rightarrow x &#x3D; \exp y$</p></blockquote><blockquote><p>$\displaystyle e^x&#x3D;y \rightarrow \ln y&#x3D;x$<br>$\displaystyle e^{\ln x}&#x3D;x$<br>$\ln{(e^x)} &#x3D; x, x \in R$</p></blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <content type="html"><![CDATA[<h1 id="微積分上課筆記"><a href="#微積分上課筆記" class="headerlink" title="微積分上課筆記"></a>微積分上課筆記</h1><h2 id="微分"><a href="#微分" class="headerlink" title="微分"></a>微分</h2><p><em><strong><font color='gray'>P.441</font></strong></em></p><blockquote><p>$\displaystyle (\ln x)’ &#x3D; \frac{x’}{x}$ $\text{or}$ $\displaystyle [\ln(g(x))]’ &#x3D; \frac{g’(x)}{g(x)}$</p></blockquote><blockquote><p>求$\displaystyle y&#x3D;\frac{x^{\frac{3}{4}} \sqrt{x^2+1}}{(3x+2)^5}$之微分</p></blockquote><p>$\displaystyle \frac{dy}{dx} \frac{1}{y}&#x3D; \frac{3}{4} \frac{1}{x}+\frac{1}{2} \frac{2x}{x^2+1}-5\frac{3}{3x+2}$</p><blockquote><p>$\ln e^x &#x3D; x\ln e &#x3D; x$<br>$(x\ln e)’ &#x3D; (x)’ &#x3D; 1$<br>$\displaystyle\frac{1}{e ^ 2} \frac{d}{dx}e^x&#x3D;1$<br>$\displaystyle\rightarrow \frac{d}{dx}e^x&#x3D;e^x$<br>唯一一個微分後不變的ㄈ</p></blockquote><h3 id="與-log-之關係"><a href="#與-log-之關係" class="headerlink" title="與$log$之關係"></a>與$log$之關係</h3><p>$\displaystyle \log_b^a&#x3D;\frac{\ln a}{\ln b}$<br><em><strong>if b is a constant</strong></em><br>$\displaystyle </p><p>$\displaystyle (x^x)’ &#x3D; e^{x \ln x}$</p><h2 id="積分"><a href="#積分" class="headerlink" title="積分"></a>積分</h2><blockquote><p>求$\displaystyle \int_1^e \frac{\ln x}{x}dx$</p></blockquote><p>$\displaystyle &#x3D;\int_1^e (\ln x) \cdot d(\ln x)$<br>$\text{(due to}$ $(\ln x)’ &#x3D; \frac{1}{x} \text{)}$<br>$\displaystyle &#x3D;\frac{1}{2}(\ln x) ^ 2|_1^e$</p><h2 id="反函數"><a href="#反函數" class="headerlink" title="反函數"></a>反函數</h2><blockquote><p>$y &#x3D; \ln x \rightarrow x &#x3D; \exp y$</p></blockquote><blockquote><p>$\displaystyle e^x&#x3D;y \rightarrow \ln y&#x3D;x$<br>$\displaystyle e^{\ln x}&#x3D;x$<br>$\ln{(e^x)} &#x3D; x, x \in R$</p></blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     
     <categories>
