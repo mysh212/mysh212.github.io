@@ -12,8 +12,9 @@
     margin: 0 -15px;
     padding: 5px 15px;
     color: #353535;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 13px;
+    font-style: italic;
     display: block;
     cursor: pointer;
     border-radius: 10px;
