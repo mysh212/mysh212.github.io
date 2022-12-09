@@ -24,7 +24,7 @@
 <meta property="og:description" content="緒論眾所周知，BIT能夠實現在$O(n)$空間下單點加值，並計算區間和。至於區間加值則需要使用線段樹及lazy tag。但線段樹code超長，debug很累，而且需要約$4n$的空間。 於是我們想要在BIT上實作區間加值，這有可能嗎? 答案是肯定的。 正文差分差分就是將序列中的每一項改為自己減去前一項之值，也就是說:              $g_i &#x3D; f_i - f_{i - 1}">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2022-12-07T10:44:00.000Z">
-<meta property="article:modified_time" content="2022-12-07T11:10:08.275Z">
+<meta property="article:modified_time" content="2022-12-09T11:45:58.286Z">
 <meta property="article:author" content="ysh">
 <meta property="article:tag" content="algo">
 <meta property="article:tag" content="BIT">
@@ -317,7 +317,7 @@
               <p class="note note-warning">
                 
                   
-                    本文最後更新於：2022年12月7日 晚上
+                    本文最後更新於：2022年12月9日 晚上
                   
                 
               </p>
@@ -341,7 +341,7 @@
           </div>
 
 <p>$\displaystyle \sum_{k &#x3D; 0}^b f_k &#x3D; \sum_{k &#x3D; 0}^b g_k \cdot (b + 1 - k) &#x3D; [(b + 2) \cdot \sum_{k &#x3D; 0}^b g_i] - [\sum_{k &#x3D; 0}^b g_i \cdot (k + 1)]$</p>
-<p>所以，我們維護兩顆<em><strong>BIT</strong></em>，分別儲存<code>g[]</code>及$g_i \cdot (i + 1)$即可做到$O(\log n)$完成<strong>區間加值</strong>、<strong>區間查詢</strong>了。</p>
+<p>所以，我們維護兩顆<em><strong>BIT</strong></em>，分別儲存<code>g[]</code>及$g_i \cdot (i + 1)$即可做到$O(\log n)$完成<strong>區間加值</strong>、<strong>區間查詢</strong>了</p>
 <h2 id="例題"><a href="#例題" class="headerlink" title="例題"></a><a target="_blank" rel="noopener" href="https://zerojudge.tw/ShowProblem?problemid=d799">例題</a></h2><div class='spoiler collapsed'>
     <div class='spoiler-title'>
         code
@@ -491,7 +491,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新於</div>
-          <div>2022年12月7日</div>
+          <div>2022年12月9日</div>
         </div>
       
       
