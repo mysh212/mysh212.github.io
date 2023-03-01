@@ -35,19 +35,6 @@
   
   
   <entry>
-    <title></title>
-    <link href="/2023/02/22/%E6%BC%94%E7%AE%97%E6%B3%95%E7%AD%86%E8%A8%98/"/>
-    <url>/2023/02/22/%E6%BC%94%E7%AE%97%E6%B3%95%E7%AD%86%E8%A8%98/</url>
-    
-    <content type="html"><![CDATA[<h1 id="時間複雜度"><a href="#時間複雜度" class="headerlink" title="時間複雜度"></a>時間複雜度</h1><ul><li>$O(n)$ $\rightarrow$ $f(n) \leq g(n)$</li><li>$\Omega(n)$ $\rightarrow$ $f(n) \geq g(n)$</li><li>$\Theta(n)$ $\rightarrow$ $f(n) &#x3D; g(n)$</li></ul><h3 id="寫法"><a href="#寫法" class="headerlink" title="寫法"></a>寫法</h3><p>$n + 9 \in O(n)$</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>2022.12 TOI 潛力組題解</title>
     <link href="/2022/12/30/TOI-202212/"/>
     <url>/2022/12/30/TOI-202212/</url>
