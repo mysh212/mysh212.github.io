@@ -24,7 +24,7 @@
 <meta property="og:description" content="Repo我終於把專題趕完ㄌ(灑花 A.Icebreakerproblem給你一堆關係，請你分成兩組，問怎麼分可以讓每一組中的任兩個人沒有關係。 solution簡而言之又是個二分圖問題，但這題不需要複雜的演算法，直接DFS就可以ㄌ走到一個點，如果之前沒經過，就幫他上跟父節點相反的顏色（總共只有兩種顏色），但如果之前有經過，就會有兩種情況：  顏色正常（跟父節點相反) 顏色錯誤（跟父節點相同）對於第">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2023-04-25T03:39:00.000Z">
-<meta property="article:modified_time" content="2023-05-01T04:16:11.646Z">
+<meta property="article:modified_time" content="2023-05-01T04:45:00.752Z">
 <meta property="article:author" content="ysh">
 <meta property="article:tag" content="algo">
 <meta property="article:tag" content="solution">
@@ -256,7 +256,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.1k 字
+          3.7k 字
         
       </span>
     
@@ -267,7 +267,7 @@
         
         
         
-          26 分鐘
+          31 分鐘
         
       </span>
     
@@ -318,7 +318,7 @@
               <p class="note note-warning">
                 
                   
-                    本文最後更新於：2023年5月1日 中午
+                    本文最後更新於：2023年5月1日 下午
                   
                 
               </p>
@@ -390,7 +390,10 @@
     </div>
 </div>
 
-<h1 id="B-Land"><a href="#B-Land" class="headerlink" title="B.Land"></a><a target="_blank" rel="noopener" href="https://github.com/mysh212/Coding/blob/master/contest/joined/TOI-202304/Land%20(zh_TW).pdf">B.Land</a></h1><h2 id="solution-1"><a href="#solution-1" class="headerlink" title="solution"></a>solution</h2><h2 id="code-1"><a href="#code-1" class="headerlink" title="code"></a>code</h2><div class='spoiler collapsed'>
+<h1 id="B-Land"><a href="#B-Land" class="headerlink" title="B.Land"></a><a target="_blank" rel="noopener" href="https://github.com/mysh212/Coding/blob/master/contest/joined/TOI-202304/Land%20(zh_TW).pdf">B.Land</a></h1><h2 id="problem-1"><a href="#problem-1" class="headerlink" title="problem"></a>problem</h2><p>給定一列土地，每塊土地都有一個地主 $a_i,1 \leq i \leq n$ 。<br>蓋房子需要地主同意，但你很懶，最多只想去問$k$個地主，問最多可以連續使用多少土地。</p>
+<h2 id="solution-1"><a href="#solution-1" class="headerlink" title="solution"></a>solution</h2><p>簡單<em><strong>DP</strong></em>，我的做法是先離散化後再直接開個陣列 $now$ 紀錄目前已經使用每個地主幾塊地，再來是 $sig$ ，記錄現在需要徵求多少地主同意，可以在更新範圍時維護， $l$ 則是目前土地的最左端，同樣可以在更新範圍的時候維護。</p>
+<p>然後寫個迴圈，從左到右更新範圍，最後將答案對 $(r - l) + 1$ 取最大值即可。</p>
+<h2 id="code-1"><a href="#code-1" class="headerlink" title="code"></a>code</h2><div class='spoiler collapsed'>
     <div class='spoiler-title'>
         code
     </div>
@@ -440,12 +443,19 @@
     </div>
 </div>
 
-<h1 id="C-Name"><a href="#C-Name" class="headerlink" title="C.Name"></a><a target="_blank" rel="noopener" href="https://github.com/mysh212/Coding/blob/master/contest/joined/TOI-202304/Name%20(zh_TW).pdf">C.Name</a></h1><h2 id="solution-2"><a href="#solution-2" class="headerlink" title="solution"></a>solution</h2><h2 id="code-2"><a href="#code-2" class="headerlink" title="code"></a>code</h2><div class='spoiler collapsed'>
+<h1 id="C-Name"><a href="#C-Name" class="headerlink" title="C.Name"></a><a target="_blank" rel="noopener" href="https://github.com/mysh212/Coding/blob/master/contest/joined/TOI-202304/Name%20(zh_TW).pdf">C.Name</a></h1><h2 id="problem-2"><a href="#problem-2" class="headerlink" title="problem"></a>problem</h2><p>定義 $f_{i,j} &#x3D; \{ 1\ when\ i &#x3D; j\ ,\ 0\ otherwise \}$<br>給你一堆字串 $s_i,\forall\ 1 \leq i \leq n$ 試求</p>
+<p>$$<br>\sum_{r &#x3D; 1}^{|s_i|}\sum_{k &#x3D; \{x | x \geq 1 \wedge x \leq n \wedge x \not&#x3D; i\}} f_{s_i[1:r],s_k[1:r]}<br>$$</p>
+<h2 id="solution-2"><a href="#solution-2" class="headerlink" title="solution"></a>solution</h2><p>說說我寫這題的心路歷程，<br>multiset -&gt; unordered_multiset<br>拿到<strong>TLE</strong>後徹底自閉</p>
+<p>後來決定直接砸Trie<br>大概就是建樹的時候每走到一個節點就把那個節點的值+1<br>取答案的時候照著走一遍，把走過的節點值加起來就是答案ㄌ<br>對 就是這樣 <del>我相信你們都懂ㄌouob</del><br>好啦 看code</p>
+<h2 id="code-2"><a href="#code-2" class="headerlink" title="code"></a>code</h2><div class='spoiler collapsed'>
     <div class='spoiler-title'>
         code
     </div>
     <div class='spoiler-content'>
-        <figure><div class="code-wrapper"><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">// Author : ysh</span>
+        <blockquote>
+<p>其實這是我第一次寫Trie<br>真快樂</p>
+</blockquote>
+<figure><div class="code-wrapper"><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">// Author : ysh</span>
 <span class="token comment">// 04/25/2023 Tue  9:38:37.83</span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h></span></span>
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
