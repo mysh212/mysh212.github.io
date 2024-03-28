@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://mysh212.github.io/about/index.html</loc>
+    
+    <lastmod>2024-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://mysh212.github.io/2024/03/25/goal-6/</loc>
     
     <lastmod>2024-03-28</lastmod>
@@ -77,15 +86,6 @@
     <loc>http://mysh212.github.io/2024/02/12/goal-0/</loc>
     
     <lastmod>2024-02-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://mysh212.github.io/about/index.html</loc>
-    
-    <lastmod>2023-06-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -359,14 +359,14 @@
   </url>
   
   <url>
-    <loc>http://mysh212.github.io/categories/%E6%95%B8%E5%AD%B8/%E4%B8%8A%E8%AA%B2%E7%AD%86%E8%A8%98/</loc>
+    <loc>http://mysh212.github.io/categories/%E8%B3%87%E8%A8%8A/%E6%BC%94%E7%AE%97%E6%B3%95/%E9%A1%8C%E5%96%AE/</loc>
     <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://mysh212.github.io/categories/%E5%AD%B8%E7%BF%92%E8%A8%88%E5%8A%83/%E8%B3%87%E8%A8%8A%E9%A1%9E/</loc>
+    <loc>http://mysh212.github.io/categories/%E6%95%B8%E5%AD%B8/%E4%B8%8A%E8%AA%B2%E7%AD%86%E8%A8%98/</loc>
     <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -380,7 +380,7 @@
   </url>
   
   <url>
-    <loc>http://mysh212.github.io/categories/%E8%B3%87%E8%A8%8A/%E6%BC%94%E7%AE%97%E6%B3%95/%E9%A1%8C%E5%96%AE/</loc>
+    <loc>http://mysh212.github.io/categories/%E5%AD%B8%E7%BF%92%E8%A8%88%E5%8A%83/%E8%B3%87%E8%A8%8A%E9%A1%9E/</loc>
     <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
